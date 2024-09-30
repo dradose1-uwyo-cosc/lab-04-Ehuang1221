@@ -1,4 +1,4 @@
-# [Edmon]
+# [Edmon Huang]
 ## [Assignment Lab04]
 ## [Submission date: 10/01/24]
 ## Worked with/sources 
