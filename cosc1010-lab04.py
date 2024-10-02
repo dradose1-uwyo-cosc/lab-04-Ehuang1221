@@ -103,13 +103,13 @@ sum_min_temps = 0
 
 num_of_temps = len(max_temps)
 for temps in range(num_of_temps):
-    sum_max_temps += max_temps[temps]
-    sum_min_temps += min_temps[temps]
+    sum_max_temps = max_temps[temps] + sum_max_temps
+    sum_min_temps = min_temps[temps] + sum_min_temps
 
 avg_max_temps = sum_max_temps/num_of_temps
 avg_min_temps = sum_min_temps/num_of_temps
-print(f"Average Maximum Temperature: {avg_max_temps:.2f}")
-print(f"Average Minimum Temperature: {avg_min_temps:.2f}")
+print(f"Average Maximum Temperature: {avg_max_temps}")
+print(f"Average Minimum Temperature: {avg_min_temps}")
 # For the next part, determine the highest and lowest recorded temperatures.
 highest_temp = max(max_temps)
 lowest_temp = min(min_temps)
